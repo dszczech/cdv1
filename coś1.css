@@ -1,0 +1,15 @@
+table, tr, th, td{
+
+    background-color: lightblue;
+    border: solid 1px grey;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+l
+    th{
+        background-color: lightslategrey;
+        border: solid 1px aliceblue;
+    }
+    
