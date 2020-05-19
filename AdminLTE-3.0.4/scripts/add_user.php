@@ -26,7 +26,59 @@
     }
 
     require_once '../scripts/connect.php';
-    //dokończyć połączenie z bazą danych
+    
+    if ($conn->connect_errno){
+        $_SESSION['error'] = 'Błędne połączenie z bazą danych!';
+        header('location: ../pages/register.php');
+    }
+    else{
+      //prawidłowe połączenie z bazą danych i wypełnione prawidłowo wszystkie pola w formularzu
+      
+     
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
+    $email = $_POST['email1'];
+    $password = $_POST['pass1'];
+    $password = password_hash($password, PASSWORD_ARGON2ID);
+    $birthday = $_POST['birthday'];
+
+    $city = 1;
+    $nationality = 1;
+
+
+    $sql = "INSERT INTO `user`(`name`, `surname`,`city_id`,`nationality_id`, `email`, `password`) VALUES (?, ?, ?, ?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssiiss", $name, $surname, $city, $nationality, $email, $password);    
+
+    if($stmt->execute()){
+      header('location: ../index.php?register=success');
+      exit();
+    }
+    else
+    {
+      $sql = "SELECT * FROM user WHERE email = ?";
+      $stmt = $conn->prepare($sql);
+      $stmt->bind_param("s", $email);
+      $stmt->execute();
+      $result = $stmt->get_result();
+      $x = $result->fetch_assoc();
+      
+      if($conn->affected_rows == 1){
+        $_SESSION['error'] = 'Podany adres email istnieje!';
+      }else{
+        $_SESSION['error'] = 'Błąd w zapytaniu sql!';
+      }
+     header('location: ../pages/register.php');
+      exit();
+    }
+    }
+    //echo $conn->affected_rows;
+
+      
+    
+
+
+    
   }else{
     $_SESSION['error'] = 'Wypełnij wszystkie pola!';
     //header('location: ../pages/register.php');

@@ -24,6 +24,31 @@
     <a href="../../index2.html"><b>Admin</b>LTE</a>
   </div>
   <!-- /.login-logo -->
+
+
+<?php
+if(isset($_GET['register']) && $_GET['register'] == 'success'){
+  echo <<<SUCCESS
+
+  
+  <div class="card card-outline card-success">
+    <div class="card-header">
+      <h3 class="card-title">Prawidłowo dodano użytkownika!</h3>
+      <div class="card-tools">
+        <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+
+
+  SUCCESS;
+}
+?>
+
+
+
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>

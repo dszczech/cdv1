@@ -40,6 +40,27 @@ ERROR;
     }
   ?>
 
+<?php
+/*if(isset($_GET['register']) && $_GET['register'] == 'doubleemail'){
+  echo <<<DOUBLEEMAIL
+
+  
+  <div class="card card-outline card-danger">
+    <div class="card-header">
+      <h3 class="card-title">Konto z podanym adresem e-mail już istnieje!</h3>
+      <div class="card-tools">
+        <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+
+
+  DOUBLEEMAIL;
+}*/
+?>
+
   <div class="card">
     <div class="card-body register-card-body">
       <p class="login-box-msg">Register a new membership</p>
@@ -63,8 +84,17 @@ ERROR;
           </div>
         </div>
 
-        <!-- <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="City">
+         <div class="input-group mb-3">
+          <!--<input type="text" class="form-control" placeholder="City"> -->
+          <select name="city" class="form-control">
+          <?php
+            require_once '../scripts/connect.php'
+          ?>
+
+
+
+          <option value="">Poznań</option>
+          </select>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-map-marker-alt mr-1"></span>
@@ -79,7 +109,7 @@ ERROR;
               <span class="fas fa-globe"></span>
             </div>
           </div>
-        </div> -->
+        </div> 
 
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email"  name="email1">
