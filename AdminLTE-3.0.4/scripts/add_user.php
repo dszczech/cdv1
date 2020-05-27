@@ -42,10 +42,10 @@
     $password = password_hash($password, PASSWORD_ARGON2ID);
     $birthday = $_POST['birthday'];
 
-    $city = 1;
+    $city = $_POST['city'];
     $nationality = 1;
 
-
+     
     $sql = "INSERT INTO `user`(`name`, `surname`,`city_id`,`nationality_id`, `email`, `password`) VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssiiss", $name, $surname, $city, $nationality, $email, $password);    

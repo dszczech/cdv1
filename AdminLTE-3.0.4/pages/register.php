@@ -88,12 +88,18 @@ ERROR;
           <!--<input type="text" class="form-control" placeholder="City"> -->
           <select name="city" class="form-control">
           <?php
-            require_once '../scripts/connect.php'
-          ?>
+              require_once '../scripts/connect.php';
+              $sql="SELECT * FROM city";
+              $result= $conn->query($sql);
+              while($city=$result->fetch_assoc()){
+                echo <<<CITY
+                <option value="$city[id]">$city[city]</option>;
+CITY;
+              }
 
-
-
-          <option value="">Poznań</option>
+              
+            ?>
+         <!-- <option value="">Poznań</option> -->
           </select>
           <div class="input-group-append">
             <div class="input-group-text">

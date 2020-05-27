@@ -26,7 +26,9 @@
   <!-- /.login-logo -->
 
 
+
 <?php
+session_start();
 if(isset($_GET['register']) && $_GET['register'] == 'success'){
   echo <<<SUCCESS
 
@@ -45,6 +47,23 @@ if(isset($_GET['register']) && $_GET['register'] == 'success'){
 
   SUCCESS;
 }
+
+if(isset($_SESSION['error'])){
+  echo <<<ERROR
+
+  
+  <div class="card card-outline card-danger">
+    <div class="card-header">
+      <h3 class="card-title">$_SESSION[error]</h3>
+      
+    </div>
+  </div>
+  
+
+
+  ERROR;
+  unset($_SESSION['error']);
+}
 ?>
 
 
@@ -53,9 +72,9 @@ if(isset($_GET['register']) && $_GET['register'] == 'success'){
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="../../index3.html" method="post">
+      <form action="./scripts/login.php" method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" placeholder="Email" name="email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -63,7 +82,7 @@ if(isset($_GET['register']) && $_GET['register'] == 'success'){
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Password" name="password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
