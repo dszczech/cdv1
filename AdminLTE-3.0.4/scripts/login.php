@@ -32,6 +32,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
                 $_SESSION['logged']['name'] = $user['name']; 
                 $_SESSION['logged']['surname'] = $user['surname']; 
                 $_SESSION['logged']['email'] = $user['email']; 
+                $_SESSION['logged']['avatar'] = $user['avatar']; 
                 $conn->close();
 
                 switch($_SESSION['logged']['permission']){

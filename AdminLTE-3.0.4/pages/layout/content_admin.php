@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard v2</h1>
+            <h1 class="m-0 text-dark">Administrator systemu</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -82,89 +82,27 @@
           </div>
           <!-- /.col -->
         </div>
-       
+        <!-- /.row -->
+
+        
+        <!-- /.row -->
 
         <!-- Main row -->
         <div class="row">
           <!-- Left col -->
           <div class="col-md-8">
             <!-- MAP & BOX PANE -->
-       
+            
             <!-- /.card -->
             <div class="row">
-           
-            <div class="col-md-6">  
-                <div class="card">
-                  <div class="card-header">
-                    <h3 class="card-title">Members</h3>
+             
+              <!-- /.col -->
 
-                    <div class="card-tools">
-                      <span class="badge badge-danger">8 New Members</span>
-                      <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                      </button>
-                      <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <!-- /.card-header -->
-                  <div class="card-body p-0">
-                    <ul class="users-list clearfix">
-                      <li>
-                        <img src="../../dist/img/user1-128x128.jpg" alt="User Image">
-                        <a class="users-list-name" href="../../#">Alexander Pierce</a>
-                        <span class="users-list-date">Today</span>
-                      </li>
-                      <li>
-                        <img src="../../dist/img/user8-128x128.jpg" alt="User Image">
-                        <a class="users-list-name" href="../../#">Norman</a>
-                        <span class="users-list-date">Yesterday</span>
-                      </li>
-                      <li>
-                        <img src="../../dist/img/user7-128x128.jpg" alt="User Image">
-                        <a class="users-list-name" href="../../#">Jane</a>
-                        <span class="users-list-date">12 Jan</span>
-                      </li>
-                      <li>
-                        <img src="../../dist/img/user6-128x128.jpg" alt="User Image">
-                        <a class="users-list-name" href="../../#">John</a>
-                        <span class="users-list-date">12 Jan</span>
-                      </li>
-                      <li>
-                        <img src="../../dist/img/user2-160x160.jpg" alt="User Image">
-                        <a class="users-list-name" href="../../#">Alexander</a>
-                        <span class="users-list-date">13 Jan</span>
-                      </li>
-                      <li>
-                        <img src="../../dist/img/user5-128x128.jpg" alt="User Image">
-                        <a class="users-list-name" href="../../#">Sarah</a>
-                        <span class="users-list-date">14 Jan</span>
-                      </li>
-                      <li>
-                        <img src="../../dist/img/user4-128x128.jpg" alt="User Image">
-                        <a class="users-list-name" href="../../#">Nora</a>
-                        <span class="users-list-date">15 Jan</span>
-                      </li>
-                      <li>
-                        <img src="../../dist/img/user3-128x128.jpg" alt="User Image">
-                        <a class="users-list-name" href="../../#">Nadia</a>
-                        <span class="users-list-date">15 Jan</span>
-                      </li>
-                    </ul>
-                    <!-- /.users-list -->
-                  </div>
-                  <!-- /.card-body -->
-                  <div class="card-footer text-center">
-                    <a href="../../javascript::">View All Users</a>
-                  </div>
-                  <!-- /.card-footer -->
-                </div>             
-              </div>
-        
               <div class="col-md-6">
                 <!-- USERS LIST -->
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Members</h3>
+                    <h3 class="card-title">Latest Members</h3>
 
                     <div class="card-tools">
                       <span class="badge badge-danger">8 New Members</span>
@@ -227,9 +165,78 @@
                   <!-- /.card-footer -->
                 </div>
                 <!--/.card -->
-              </div>        
-  
-           
+              </div>
+              <div class="col-md-6">
+                <!-- USERS LIST -->
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Latest Members</h3>
+
+                    <div class="card-tools">
+                      <span class="badge badge-danger">8 New Members</span>
+                      <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                      </button>
+                      <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body p-0">
+                    <ul class="users-list clearfix">
+                      <li>
+                        <img src="../../dist/img/user1-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="../../#">Alexander Pierce</a>
+                        <span class="users-list-date">Today</span>
+                      </li>
+                      <li>
+                        <img src="../../dist/img/user8-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="../../#">Norman</a>
+                        <span class="users-list-date">Yesterday</span>
+                      </li>
+                      <li>
+                        <img src="../../dist/img/user7-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="../../#">Jane</a>
+                        <span class="users-list-date">12 Jan</span>
+                      </li>
+                      <li>
+                        <img src="../../dist/img/user6-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="../../#">John</a>
+                        <span class="users-list-date">12 Jan</span>
+                      </li>
+                      <li>
+                        <img src="../../dist/img/user2-160x160.jpg" alt="User Image">
+                        <a class="users-list-name" href="../../#">Alexander</a>
+                        <span class="users-list-date">13 Jan</span>
+                      </li>
+                      <li>
+                        <img src="../../dist/img/user5-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="../../#">Sarah</a>
+                        <span class="users-list-date">14 Jan</span>
+                      </li>
+                      <li>
+                        <img src="../../dist/img/user4-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="../../#">Nora</a>
+                        <span class="users-list-date">15 Jan</span>
+                      </li>
+                      <li>
+                        <img src="../../dist/img/user3-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="../../#">Nadia</a>
+                        <span class="users-list-date">15 Jan</span>
+                      </li>
+                    </ul>
+                    <!-- /.users-list -->
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer text-center">
+                    <a href="../../javascript::">View All Users</a>
+                  </div>
+                  <!-- /.card-footer -->
+                </div>
+                <!--/.card -->
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
 
             <!-- TABLE: LATEST ORDERS -->
             <div class="card">
@@ -373,72 +380,7 @@
             </div>
             <!-- /.info-box -->
 
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Browser Usage</h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-8">
-                    <div class="chart-responsive">
-                      <canvas id="pieChart" height="150"></canvas>
-                    </div>
-                    <!-- ./chart-responsive -->
-                  </div>
-                  <!-- /.col -->
-                  <div class="col-md-4">
-                    <ul class="chart-legend clearfix">
-                      <li><i class="far fa-circle text-danger"></i> Chrome</li>
-                      <li><i class="far fa-circle text-success"></i> IE</li>
-                      <li><i class="far fa-circle text-warning"></i> FireFox</li>
-                      <li><i class="far fa-circle text-info"></i> Safari</li>
-                      <li><i class="far fa-circle text-primary"></i> Opera</li>
-                      <li><i class="far fa-circle text-secondary"></i> Navigator</li>
-                    </ul>
-                  </div>
-                  <!-- /.col -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer bg-white p-0">
-                <ul class="nav nav-pills flex-column">
-                  <li class="nav-item">
-                    <a href="../../#" class="nav-link">
-                      United States of America
-                      <span class="float-right text-danger">
-                        <i class="fas fa-arrow-down text-sm"></i>
-                        12%</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../#" class="nav-link">
-                      India
-                      <span class="float-right text-success">
-                        <i class="fas fa-arrow-up text-sm"></i> 4%
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../#" class="nav-link">
-                      China
-                      <span class="float-right text-warning">
-                        <i class="fas fa-arrow-left text-sm"></i> 0%
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /.footer -->
-            </div>
+            
             <!-- /.card -->
 
             <!-- PRODUCT LIST -->
