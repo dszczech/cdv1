@@ -64,7 +64,7 @@
       $x = $result->fetch_assoc();
       
       if($conn->affected_rows == 1){
-        $_SESSION['error'] = 'Podany adres email istnieje!';``
+        $_SESSION['error'] = 'Podany adres email istnieje!';
       }else{
         $_SESSION['error'] = 'Błąd w zapytaniu sql!';
       }
